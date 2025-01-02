@@ -4,6 +4,9 @@ import BaseLayout from "../layouts/BaseLayout.astro"
 import CardButton from "../components/CardButton.astro"
 import avatarJessica from "../images/avatar-jessica.jpeg"
 
+const title = "Social Links Profile"
+const description = "A profile card with social links."
+
 const buttons = [
     {
         text: "GitHub",
@@ -28,10 +31,7 @@ const buttons = [
 ]
 ---
 
-<BaseLayout 
-    title="social-links-profile"
-    description="A profile card with social links."
->
+<BaseLayout title={title} description={description}>
     <div class="flex w-[20.4375rem] flex-col items-center gap-300 rounded-xl bg-grey-800 p-300 sm:w-[28.5rem] sm:p-500 lg:w-[24rem]">
         <Image loading="eager" src={avatarJessica} alt="Profile Picture" class="w-22 rounded-full" />
         <div class="flex flex-col items-center gap-50">
