@@ -28,9 +28,12 @@ const buttons = [
 ]
 ---
 
-<BaseLayout title="social-links-profile">
+<BaseLayout 
+    title="social-links-profile"
+    description="A profile card with social links."
+>
     <div class="flex w-[20.4375rem] flex-col items-center gap-300 rounded-xl bg-grey-800 p-300 sm:w-[28.5rem] sm:p-500 lg:w-[24rem]">
-        <Image src={avatarJessica} alt="Profile Picture" class="w-22 rounded-full" />
+        <Image loading="eager" src={avatarJessica} alt="Profile Picture" class="w-22 rounded-full" />
         <div class="flex flex-col items-center gap-50">
             <h2 class="text-preset-1 font-semibold">Jessica Randall</h2>
             <p class="text-preset-2 font-bold text-green">London, United Kingdom</p>
